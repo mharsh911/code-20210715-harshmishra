@@ -15,6 +15,7 @@
 - then on terminal navigate into the folder and do **'npm i'**.
 - <img src = "img/npmI.png" width = "400" hieght = "150" />
 - start the server by typing **'npm run server'**.
+- <img src = "img/npmRunServer-1.png" width = "400" hieght = "150" />
 - go to browser and type **'localhost:3001/api/getbmidata'** or **'localhost:3001/api/getcategorynumbers'**.
 ## Tests
 - navigate to the cloned folder.
