@@ -1,4 +1,13 @@
 # BMI Calculator
+## About the App
+- I have develpoed an API which provides bmi Data of patients when get request on localhost:3001/api/getbmidata is made.
+- It also provides with number of patients in each category (underweightCount, overweightCount, normalweightCount, moderatelyobeseCount, severelyobeseCount, veryseverelyobeseCount ) when get request on localhost:3001/api/getcategorynumbers is made.
+- API endpoint is 'localhost:3001/'.
+## Technologies used
+- Node.js.
+- Express.js.
+- JavaScript.
+- Mocha, Chai and Sinon for writing tests.
 ## Requirements
 - Node.js v10 or higher must be installed to run this program.
 ## Usage
