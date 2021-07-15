@@ -1,7 +1,13 @@
 const { bmiJsonData, bmiCategoryHealthRisk } = require('../store/bmiData');
 const uuid = require('uuid');
 
-const findBmiCategoryHealthRisk = (data) => {
+class BmiService {
+    constructor(){
+
+    }
+}
+
+BmiService.findBmiCategoryHealthRisk = (data) => {
     for (let key in bmiCategoryHealthRisk) {
         const upperRange = parseFloat(key.split('-')[1]);
         const lowerRange = parseFloat(key.split('-')[0]);
@@ -13,14 +19,14 @@ const findBmiCategoryHealthRisk = (data) => {
     }
 }
 
-const findBmi = () => {
+BmiService.findBmi = () => {
     if (bmiJsonData) {
         bmiJsonData.map(data => {
             data["id"] = uuid.v1();
             const heightInM = data.HeightCm * 0.01
             let bmi = data.WeightKg / (heightInM * heightInM);
             data["bmi"] = bmi;
-            findBmiCategoryHealthRisk(data);
+            BmiService.findBmiCategoryHealthRisk(data);
         })
         return { success: true, data: bmiJsonData };
     } else {
@@ -28,8 +34,8 @@ const findBmi = () => {
     }
 }
 
-const categoryNumbers = () => {
-    const result = findBmi();
+BmiService.categoryNumbers = () => {
+    const result = BmiService.findBmi();
     let underweightCount = 0;
     let overweightCount = 0;
     let normalweightCount = 0;
@@ -68,4 +74,4 @@ const categoryNumbers = () => {
     }
 }
 
-module.exports = { findBmi, categoryNumbers }
+module.exports = BmiService

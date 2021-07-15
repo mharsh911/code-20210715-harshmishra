@@ -1,4 +1,4 @@
-const { findBmi, categoryNumbers } = require("../services/BmiService");
+const BmiService = require("../services/BmiService");
 
 class BmiController {
     constructor() {
@@ -6,20 +6,20 @@ class BmiController {
 }
 
 BmiController.getBmiData = (req, res) => {
-    const result = findBmi();
+    const result = BmiService.findBmi();
     if (result.success) {
-        res.send(result.data);
+        res.send({status: 200, data: result.data});
     } else {
-        res.send({ message: "failed in fetching data" });
+        res.send({ status: 500, message: result.message });
     }
 }
 
 BmiController.getCategoryNumbers = (req, res) => {
-    const result = categoryNumbers();
+    const result = BmiService.categoryNumbers();
     if (result.success){
-        res.send(result.data);
+        res.send({status: 200, data: result.data});
     } else {
-        res.send(result.message);
+        res.send({status: 500, message: result.message});
     }
 }
 
