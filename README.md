@@ -13,15 +13,15 @@
 ## Usage
 - clone the master branch and delete node_modules and package-lock.json
 - then on terminal navigate into the folder and do **'npm i'**.
-- <img src = "img/npmI.png" width = "400" height = "50" />
+- <img src = "img/npmI.png" width = "400" height = "50" style = "border-radius: 10px"/>
 - start the server by typing **'npm run server'**.
-- <img src = "img/npmRunServer-1.png" width = "600" height = "200" />
+- <img src = "img/npmRunServer-1.png" width = "600" height = "200" style = "border-radius: 10px"/>
 - go to browser and type **'localhost:3001/api/getbmidata'** to get bmi data.
-- <img src = "img/getBmiData-1.png" width = "600" height = "600" />
+- <img src = "img/getBmiData-1.png" width = "600" height = "600" style = "border-radius: 10px" />
 - go to browser and type **'localhost:3001/api/getcategorynumbers'** to get category counts.
-- <img src = "img/getCategoryNumbers.png" width = "400" height = "400" />
+- <img src = "img/getCategoryNumbers.png" width = "400" height = "400" style = "border-radius: 10px" />
 ## Tests
 - navigate to the cloned folder.
 - type **'npm test'** on the terminal to run test files.
-- <img src = "img/npmTest.png" width = "500" height = "50" />
-- <img src = "img/npmTest-1.png" width = "600" height = "400" />
+- <img src = "img/npmTest.png" width = "500" height = "50" style = "border-radius: 10px"/>
+- <img src = "img/npmTest-1.png" width = "600" height = "400" style = "border-radius: 10px"/>
