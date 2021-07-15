@@ -17,7 +17,7 @@
 - start the server by typing **'npm run server'**.
 - <img src = "img/npmRunServer-1.png" width = "600" height = "200" />
 - go to browser and type **'localhost:3001/api/getbmidata'** to get bmi data.
-- <img src = "img/getBmiData-1.png" width = "500" height = "600" />
+- <img src = "img/getBmiData-1.png" width = "600" height = "600" />
 - go to browser and type **'localhost:3001/api/getcategorynumbers'** to get category counts.
 - <img src = "img/getCategoryNumbers.png" width = "400" height = "400" />
 ## Tests
