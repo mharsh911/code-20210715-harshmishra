@@ -16,7 +16,10 @@
 - <img src = "img/npmI.png" width = "400" height = "50" />
 - start the server by typing **'npm run server'**.
 - <img src = "img/npmRunServer-1.png" width = "600" height = "200" />
-- go to browser and type **'localhost:3001/api/getbmidata'** or **'localhost:3001/api/getcategorynumbers'**.
+- go to browser and type **'localhost:3001/api/getbmidata'**.
+- <img src = "img/getbmiData-1.png" width = "500" height = "600" />
+- go to browser and type **'localhost:3001/api/getcategorynumbers'**
+- <img src = "img/getCategoryNumbers.png" width = "300" height = "400" />
 ## Tests
 - navigate to the cloned folder.
 - type **'npm test'** on the terminal to run test files.
