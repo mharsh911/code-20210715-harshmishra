@@ -23,3 +23,5 @@
 ## Tests
 - navigate to the cloned folder.
 - type **'npm test'** on the terminal to run test files.
+- <img src = "img/npmTest.png" width = "400" height = "50" />
+- <img src = "img/npmTest-1.png" width = "400" height = "400" />
