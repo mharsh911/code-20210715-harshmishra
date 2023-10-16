@@ -1,6 +1,6 @@
 # BMI Calculator
 ## About the App
-- I have develpoed an API which provides bmi Data of patients when get request on localhost:3001/api/getbmidata is made.
+- I have built an API which provides bmi Data of patients when get request on localhost:3001/api/getbmidata is made.
 - It also provides with number of patients in each category (underweightCount, overweightCount, normalweightCount, moderatelyobeseCount, severelyobeseCount, veryseverelyobeseCount ) when get request on localhost:3001/api/getcategorynumbers is made.
 - API endpoint is 'localhost:3001/'.
 ## Technologies used
